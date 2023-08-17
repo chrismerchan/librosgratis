@@ -1,0 +1,98 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+    padding: 0;
+}
+
+/* El elemento header tendrá una imagen de fondo */
+
+header {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+}
+
+#seccionHeader {
+    display: grid;
+    grid-template-areas: "area1 area1"
+        "area2 area3";
+    padding-top: 100px;
+}
+
+#uno {
+    grid-area: area1;
+}
+
+#divHeaderIzquierda {
+    grid-area: area2;
+    padding-left: 50px;
+}
+#navTitulo{
+    font-size: xxx-large;
+}
+#h3Link{
+    font-weight: bold;
+}
+#h3Descripcion{
+    font-weight: 100;
+}
+
+#divHeaderDerecha {
+    grid-area: area3;
+    padding-left: 20px;
+    padding-left: 100px;
+    padding-top: 170px;
+}
+
+
+#ulLinks {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0;
+}
+
+#main{
+    padding:1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+#divImagenesWeb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#divImagenesWeb a img{
+    width: 9rem;
+    border: 1rem solid white;
+    box-shadow: 0 1px 6px rgb(0 0 0/12%),
+    0 1px 4px rgb(0 0 0/24%);
+
+}
+.borde{
+    border: 1mm ridge rgba(241, 11, 11, 0.6);
+}
+.bordeLateral{
+    border-left: 1mm ridge rgba(241, 11, 11, 0.6);    
+    border-right: 1mm ridge rgba(241, 11, 11, 0.6);
+    margin: 0%;
+}
+#links{
+    padding: 2rem;
+}
+#h2MainTitulo{
+    font-weight: normal;
+    font-size: x-large;
+}
